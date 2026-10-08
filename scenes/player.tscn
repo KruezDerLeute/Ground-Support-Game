@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://nilw5yl37kto"]
+
+[ext_resource type="Script" uid="uid://b10dx1mrc5kji" path="res://scripts/Player.cs" id="1_3vyb7"]
+[ext_resource type="Texture2D" uid="uid://tpara05l1y4l" path="res://art/Fokker_attack_1.png" id="2_g2els"]
+
+[node name="Player" type="CharacterBody2D" unique_id=1967579086]
+collision_layer = 2
+collision_mask = 33
+script = ExtResource("1_3vyb7")
+
+[node name="Plane" type="Sprite2D" parent="." unique_id=1804690593]
+position = Vector2(-25, -25)
+scale = Vector2(0.8046875, 0.8046875)
+texture = ExtResource("2_g2els")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1857862353]
+
+[node name="GunMuzzle" type="Marker2D" parent="." unique_id=1516701916]
+
+[node name="BombBay" type="Marker2D" parent="." unique_id=261126219]
